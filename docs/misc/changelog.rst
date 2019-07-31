@@ -6,6 +6,33 @@ Changelog
 For download links, please look at `Github release page <https://github.com/hill-a/stable-baselines/releases>`_.
 
 
+
+Pre-Release 2.7.1a0 (WIP)
+--------------------------
+
+
+Breaking Changes:
+^^^^^^^^^^^^^^^^^
+- updated dependencies: tensorflow v1.8.0 is now required
+
+New Features:
+^^^^^^^^^^^^^
+
+Bug Fixes:
+^^^^^^^^^^
+
+Deprecations:
+^^^^^^^^^^^^^
+
+Others:
+^^^^^^^
+- docker images were updated
+
+Documentation:
+^^^^^^^^^^^^^^
+
+
+
 Release 2.7.0 (2019-07-31)
 --------------------------
 
