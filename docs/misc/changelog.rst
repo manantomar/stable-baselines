@@ -20,6 +20,7 @@ New Features:
 
 Bug Fixes:
 ^^^^^^^^^^
+- set `allow_pickle=True` for numpy>=1.17.0 when loading expert dataset
 
 Deprecations:
 ^^^^^^^^^^^^^
