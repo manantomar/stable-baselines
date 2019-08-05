@@ -12,12 +12,19 @@ install:
   - docker pull araffin/stable-baselines-cpu:v2.7.0
 
 script:
-  - ./run_tests_travis.sh
+  - ./run_tests_travis.sh ${TEST_GLOB}
 
 matrix:
   include:
-    - name: "Unit Tests"
+    # Big test suite. Run in parallel to decrease wall-clock time, and to avoid OOM error from leaks
+    - name: "Unit Tests a-d"
+      env: TEST_GLOB=[a-d]*
 
+    - name: "Unit Tests e-n"
+      env: TEST_GLOB=[e-n]*
+
+    - name: "Unit Tests m-z"
+      env: TEST_GLOB=[m-z]*
 
     - name: "Sphinx Documentation"
       script:
