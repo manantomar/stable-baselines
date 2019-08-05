@@ -2,7 +2,7 @@
 
 DOCKER_CMD="docker run -it --rm --network host --ipc=host --mount src=$(pwd),target=/root/code/stable-baselines,type=bind"
 DOCKER_IMAGE="araffin/stable-baselines-cpu:v2.7.0"
-BASH_CMD="cd /root/code/stable-baselines/ && pip install tensorflow==1.5.0 gym==0.14.0"
+BASH_CMD="cd /root/code/stable-baselines/ && pip install tensorflow==1.13.2 gym==0.14.0"
 
 if [[ $# -ne 1 ]]; then
   echo "usage: $0 <test glob>"

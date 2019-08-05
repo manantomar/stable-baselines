@@ -141,7 +141,7 @@ Or, with the shell file:
 
 .. code-block:: bash
 
-   ./run_docker_gpu.sh pytest tests/
+   ./scripts/run_docker_gpu.sh pytest tests/
 
 Run the docker CPU image
 
@@ -153,7 +153,7 @@ Or, with the shell file:
 
 .. code-block:: bash
 
-   ./run_docker_cpu.sh pytest tests/
+   ./scripts/run_docker_cpu.sh pytest tests/
 
 Explanation of the docker command:
 
