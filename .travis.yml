@@ -20,8 +20,11 @@ matrix:
     - name: "Unit Tests a-d"
       env: TEST_GLOB="[a-d]*"
 
-    - name: "Unit Tests e-n"
-      env: TEST_GLOB="[e-n]*"
+    - name: "Unit Tests e-i"
+      env: TEST_GLOB="[e-i]*"
+
+    - name: "Unit Tests j-l"
+      env: TEST_GLOB="[j-l]*"
 
     - name: "Unit Tests m-z"
       env: TEST_GLOB="[m-z]*"

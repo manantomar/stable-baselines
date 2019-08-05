@@ -11,6 +11,8 @@ fi
 
 TEST_GLOB=$1
 
+set -e  # exit immediately on any error
+
 # For pull requests from fork, Codacy token is not available, leading to build failure
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
   ${DOCKER_CMD} ${DOCKER_IMAGE} \
@@ -22,3 +24,4 @@ else
                 pytest --cov-config .coveragerc --cov-report term --cov-report xml --cov=. -v tests/test_${TEST_GLOB} && \
                 python-codacy-coverage -r coverage.xml --token=$CODACY_PROJECT_TOKEN"
 fi
+
