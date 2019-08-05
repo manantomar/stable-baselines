@@ -47,6 +47,8 @@ We recommend using `Anaconda <https://conda.io/docs/user-guide/install/windows.h
 (using again ``pip install -e .``)
 
 
+.. _openmpi:
+
 Stable Release
 ~~~~~~~~~~~~~~
 To install with support for all algorithms, including those depending on OpenMPI, execute:
