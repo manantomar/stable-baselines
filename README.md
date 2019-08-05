@@ -91,6 +91,10 @@ Using pip from pypi:
 ```
 pip install stable-baselines
 ```
+If you need one of the algorithms depending on MPI, then install using:
+```
+pip install stable-baselines[mpi]
+```
 
 Please read the [documentation](https://stable-baselines.readthedocs.io/) for more details and alternatives (from source, using docker).
 
