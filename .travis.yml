@@ -12,8 +12,8 @@ install:
   - docker pull araffin/stable-baselines-cpu:v2.7.0
 
 script:
-  - echo ./run_tests_travis.sh ${TEST_GLOB}
-  - ./run_tests_travis.sh ${TEST_GLOB}
+  - echo ./run_tests_travis.sh "${TEST_GLOB}"
+  - ./run_tests_travis.sh "${TEST_GLOB}"
 
 matrix:
   include:
